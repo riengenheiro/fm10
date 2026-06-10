@@ -1,0 +1,39 @@
+# Fábrica Mágica — Landing Page (Astro)
+
+Landing page estática da Fábrica Mágica, migrada de PHP para Astro. Build e deploy via **Cloudflare Pages**.
+
+## Cloudflare Pages — Configuração
+
+| Campo | Valor |
+|-------|-------|
+| Framework preset | Astro |
+| Build command | `npm run build` |
+| Build output directory | `dist` |
+| Node version | 20 |
+
+### Variável de ambiente
+
+| Nome | Descrição | Exemplo |
+|------|-----------|---------|
+| `PUBLIC_SITE_URL` | URL pública do site (usada nas meta tags OG/Twitter) | `https://doutoraescola.com.br` |
+
+Configure em **Cloudflare Pages → Settings → Environment variables** antes do primeiro deploy.
+
+## Imagens
+
+As imagens usam os mesmos caminhos do site original e devem estar disponíveis no domínio de produção:
+
+- `/livro/images/ads1.webp`
+- `/livro/images/gua-treinamento.webp`
+
+O logo do footer é carregado de `https://fm.doutoraescola.com.br/assets/img/logo.webp`.
+
+## Tracking
+
+- **Google Tag Manager:** `GTM-56HN95B`
+- **Meta Pixel:** `216996528921536` (client-side, sem API server-side)
+- Evento `InitiateCheckout` nos cliques nos links de checkout
+
+## Repositório
+
+https://github.com/riengenheiro/fm10.git
