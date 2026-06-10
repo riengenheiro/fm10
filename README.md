@@ -8,8 +8,10 @@ Landing page estática da Fábrica Mágica, migrada de PHP para Astro. Build e d
 |-------|-------|
 | Framework preset | Astro |
 | Build command | `npm run build` |
-| Build output directory | `dist` |
+| Build output directory | **`dist`** (não use `public` — essa pasta só tem scripts JS) |
 | Node version | 20 |
+
+> O arquivo [`wrangler.toml`](wrangler.toml) já define `pages_build_output_dir = "dist"` para o Cloudflare não publicar a pasta errada.
 
 ### Variável de ambiente
 
