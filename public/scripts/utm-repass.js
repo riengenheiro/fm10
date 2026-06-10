@@ -1,16 +1,22 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var urlParams = window.location.search;
-  if (urlParams) {
-    document.querySelectorAll('a').forEach(function (link) {
-      if (link.href && link.href.indexOf('checkout') !== -1) {
-        try {
-          var linkUrl = new URL(link.href);
-          new URLSearchParams(urlParams).forEach(function (value, key) {
-            linkUrl.searchParams.set(key, value);
-          });
-          link.href = linkUrl.toString();
-        } catch (e) {}
-      }
-    });
+  var incoming = new URLSearchParams(window.location.search);
+  if (!incoming.toString()) return;
+
+  function isTrackingParam(key) {
+    return key.indexOf('utm_') === 0 || key === 'fbclid' || key === 'gclid';
   }
+
+  document.querySelectorAll('a[href*="checkout"]').forEach(function (link) {
+    try {
+      var linkUrl = new URL(link.href, window.location.origin);
+      incoming.forEach(function (value, key) {
+        if (isTrackingParam(key)) {
+          linkUrl.searchParams.set(key, value);
+        }
+      });
+      link.href = linkUrl.toString();
+    } catch (e) {
+      console.error('UTM repasse:', e);
+    }
+  });
 });

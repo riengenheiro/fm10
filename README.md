@@ -25,8 +25,8 @@ Configure em **Cloudflare Pages → Settings → Environment variables** antes d
 
 As imagens usam os mesmos caminhos do site original e devem estar disponíveis no domínio de produção:
 
-- `/livro/images/ads1.webp`
-- `/livro/images/gua-treinamento.webp`
+- `https://doutoraescola.com.br/livro/images/ads1.webp`
+- `https://doutoraescola.com.br/livro/images/gua-treinamento.webp`
 
 O logo do footer é carregado de `https://fm.doutoraescola.com.br/assets/img/logo.webp`.
 
