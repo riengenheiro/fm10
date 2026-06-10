@@ -1,6 +1,7 @@
 ---
 import '../styles/landing.css';
 import {
+  FAVICON_URL,
   GTM_ID,
   HERO_IMAGE,
   META_PIXEL_ID,
@@ -19,6 +20,9 @@ const ogImageUrl = HERO_IMAGE;
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>{OG_TITLE}</title>
+    <link rel="icon" href={FAVICON_URL} type="image/x-icon" />
+    <link rel="shortcut icon" href={FAVICON_URL} type="image/x-icon" />
+    <link rel="apple-touch-icon" href={FAVICON_URL} />
     <meta name="description" content="Pare de travar na hora de escrever relatórios. A Fábrica Mágica te dá as palavras certas, os termos adequados e a estrutura da BNCC. Relatórios prontos em 5 minutos por R$ 10." />
     <meta property="og:locale" content="pt_BR" />
     <meta property="og:type" content="website" />

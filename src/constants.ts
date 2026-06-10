@@ -1,5 +1,6 @@
 export const CHECKOUT_URL = 'https://fm.doutoraescola.com.br/checkout/?s=cOBcg';
 export const ASSETS_BASE = 'https://doutoraescola.com.br';
+export const FAVICON_URL = `${ASSETS_BASE}/favicon.ico`;
 export const HERO_IMAGE = `${ASSETS_BASE}/livro/images/ads1.webp`;
 export const GUA_IMAGE = `${ASSETS_BASE}/livro/images/gua-treinamento.webp`;
 export const META_PIXEL_ID = '216996528921536';
