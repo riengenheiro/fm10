@@ -4,7 +4,7 @@ export const META_PIXEL_ID = '216996528921536';
 export const GTM_ID = 'GTM-56HN95B';
 
 export const SITE_URL =
-  import.meta.env.PUBLIC_SITE_URL ?? 'https://doutoraescola.com.br';
+  import.meta.env.PUBLIC_SITE_URL ?? 'https://fm.escolhacertabrasil.com.br';
 
 export const OG_TITLE =
   'Termine seus relatórios em 5 minutos — por apenas R$ 10';

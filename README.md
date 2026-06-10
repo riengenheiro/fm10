@@ -15,7 +15,7 @@ Landing page estática da Fábrica Mágica, migrada de PHP para Astro. Build e d
 
 | Nome | Descrição | Exemplo |
 |------|-----------|---------|
-| `PUBLIC_SITE_URL` | URL pública do site (usada nas meta tags OG/Twitter) | `https://doutoraescola.com.br` |
+| `PUBLIC_SITE_URL` | URL pública do site (usada nas meta tags OG/Twitter) | `https://fm.escolhacertabrasil.com.br` |
 
 Configure em **Cloudflare Pages → Settings → Environment variables** antes do primeiro deploy.
 
